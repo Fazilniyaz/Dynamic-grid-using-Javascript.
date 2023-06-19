@@ -1,217 +1,135 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,500&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  #main .clothingText,
-  #main .accessoriesText {
-    padding-left: 40px;
-  }
-  
-  #main .clothSectionHeader {
-    color: #1b1919;
-    font-family: "Montserrat", sans-serif;
-    display: block;
-    font-size: 1.5em;
-    -webkit-margin-before: 0.83em;
-            margin-block-start: 0.83em;
-    -webkit-margin-after: 0.83em;
-            margin-block-end: 0.83em;
-    -webkit-margin-start: 0px;
-            margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-            margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  #main .clothInnerDiv,
-  #main .AccessoriesDiv {
-    display: -ms-grid;
-    display: grid;
-  
-        grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    padding: 0 108px;
-  }
-  
-  #main .clothInnerDiv .card,
-  #main .AccessoriesDiv .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
+}
+
+
+
+.heading1{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.card{
+    min-height:200px;
+    width: 13rem;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-shadow: 0px 2px 10px gray;
-            box-shadow: 0px 2px 10px gray;
-    width: 200px;
-    cursor: pointer;
-    margin-bottom: 80px;
-  }
-  
-  #main .clothInnerDiv .card:hover,
-  #main .AccessoriesDiv .card:hover {
-    -webkit-box-shadow: 0px 3px 4px #433d3d;
-            box-shadow: 0px 3px 4px #433d3d;
-  }
-  
-  #main .clothInnerDiv .card .imgDiv,
-  #main .AccessoriesDiv .card .imgDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  #main .clothInnerDiv .card .imgDiv img,
-  #main .AccessoriesDiv .card .imgDiv img {
-    width: 100%;
-  }
-  
-  #main .clothInnerDiv .card .detailsDiv,
-  #main .AccessoriesDiv .card .detailsDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 10px 0;
-    padding-left: 10px;
-  }
-  
-  #main .clothInnerDiv .card .detailsDiv h3,
-  #main .AccessoriesDiv .card .detailsDiv h3 {
-    text-align: left;
-    font-size: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 20px 30px;
+
+}
+
+#cloth , #Noncloth{
+    width:75rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:2rem;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    
+
+}
+
+.Brand{
+    font-size: 0.8rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: gray;
+    font-weight: 500;
+    margin-left:0.5rem;
+}
+
+.img{
+    height:18rem;
+    width: 13rem;
+}
+
+
+.swag{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: 400;
-    letter-spacing: 0.5px;
-    color: #1b1919;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  #main .clothInnerDiv .card .detailsDiv h4,
-  #main .AccessoriesDiv .card .detailsDiv h4 {
-    margin-top: 10px;
-    text-align: left;
-    font-size: 12px;
-    color: #6e6e6e;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  #main .clothInnerDiv .card .detailsDiv h5,
-  #main .AccessoriesDiv .card .detailsDiv h5 {
-    margin-top: 10px;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #009688;
-    font-family: "Montserrat", sans-serif;
-    -webkit-margin-before: 1.67em;
-            margin-block-start: 1.67em;
-    font-weight: bold;
-  }
-  
-  @media screen and (max-width: 1250px) {
-    #main .clothingText,
-    #main .accessoriesText {
-      padding-left: 10px;
+    margin: 0.5rem;
+    font-size:medium;
+    letter-spacing: -1px;
+}
+
+.price{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 500;
+    margin: 0.5rem;
+    font-size:0.8rem;
+    letter-spacing: 0.4px;
+
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Foldit', cursive;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@media (max-width:310px){
+    .card{
+        width: calc(20% - 20px);
+        display: flex;
+        
     }
-    #main .clothSectionHeader {
-      font-size: 1.3em;
+    .img{
+        width: 13.8rem;
     }
-    #main .clothInnerDiv,
-    #main .AccessoriesDiv {
-      display: -ms-grid;
-      display: grid;
-    
-          grid-template-columns: repeat(5, 200px);
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+}
+
+
+@media (max-width:290px){
+    #cloth{
+        transform: translate(-4rem,0);
     }
-  }
-  
-  @media screen and (max-width: 1100px) {
-    #main .clothingText,
-    #main .accessoriesText {
-      padding-left: 10px;
+    #Noncloth{
+        transform: translate(-4rem,0);
     }
-    #main .clothSectionHeader {
-      font-size: 1.3em;
+    .card{
+        width: calc(30% - 90px);
+        display: flex;
+        
     }
-    #main .clothInnerDiv,
-    #main .AccessoriesDiv {
-      display: -ms-grid;
-      display: grid;
-  
-          grid-template-columns: repeat(3, 200px);
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+    .img{
+        width: 16.8rem;
     }
-  }
-  
-  @media screen and (max-width: 650px) {
-    #main .clothInnerDiv,
-    #main .AccessoriesDiv {
-      
-          grid-template-columns: repeat(2, 180px);
+}
+
+
+@media (max-width:260px){
+    #cloth , #Noncloth{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80%;
     }
-    #main .clothInnerDiv .card,
-    #main .AccessoriesDiv .card {
-      width: 180px;
+
+    .card{
+        width: 25rem;
+        height: 30rem;
+        margin-bottom: 4rem;
     }
-  }
-  
-  @media screen and (max-width: 400px) {
-    #main .clothingText,
-    #main .accessoriesText {
-      padding-left: 10px;
+    .img{
+        width: 25rem;
+        height: 24rem;
+
     }
-    #main .clothSectionHeader {
-      font-size: 1.3em;
-    }
-    #main .clothInnerDiv,
-    #main .AccessoriesDiv {
-    
-          grid-template-columns: repeat(2, 160px);
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    }
-    #main .clothInnerDiv .card,
-    #main .AccessoriesDiv .card {
-      width: 160px;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    #main .clothingText,
-    #main .accessoriesText {
-      padding-left: 10px;
-      text-align: center;
-    }
-    #main .clothingText h2,
-    #main .accessoriesText h2 {
-      font-size: 15px;
-    }
-    #main .clothSectionHeader {
-      font-size: 1.3em;
-    }
-    #main .clothInnerDiv,
-    #main .AccessoriesDiv {
-     
-          grid-template-columns: repeat(1, 200px);
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    }
-    #main .clothInnerDiv .card,
-    #main .AccessoriesDiv .card {
-      width: 200px;
-    }
-  }
+}
+
